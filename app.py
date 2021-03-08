@@ -89,15 +89,15 @@ def tobs():
     session.close()
 
     temp_obs = []
-    for date, tobs in results:
+    for entry in results:
         tobs_dict = {}
-        tobs_dict[date] = tobs
-        precip.append(precip_dict)
+        tobs_dict[entry[0]] = entry[1]
+        temp_obs.append(tobs_dict)
 
-    return jsonify(precip)
-    #tobs_yr = np.ravel(results)
+    return jsonify(temp_obs)
+    # #tobs_yr = np.ravel(results)
     #return list(np.ravel(results))
-    return jsonify(results)
+    #return jsonify(results)
     #need to pull station id out of this IOT return just a list of temps(?)
 
 @app.route("/api/v1.0/<start>")
