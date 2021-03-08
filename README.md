@@ -26,7 +26,7 @@ Now that I have completed my initial analysis, I design a Flask API based on the
 My home page lists all routes that are available:
 
 /api/v1.0/precipitation -
-connvert the query results to a dictionary using date as the key and prcp as the value and return the JSON representation of the dictionary.
+convert the query results to a dictionary using date as the key and prcp as the value and return the JSON representation of the dictionary.
 
 /api/v1.0/stations - 
 Return a JSON list of stations from the dataset.
