@@ -21,7 +21,7 @@ Filter by the station with the highest number of observations.
 Query the last 12 months of temperature observation data for this station.
 Plot the results as a histogram with bins=12.
 
-Now that I have completed your initial analysis, I design a Flask API based on the queries that I have just developed.
+Now that I have completed my initial analysis, I design a Flask API based on the queries that I have just developed.
 
 My home page lists all routes that are available:
 
